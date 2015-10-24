@@ -66,3 +66,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         
     def get_primary_email(self):
         return getattr(self, 'email')
+    
+class Bill(models.Model):
+    name = models.CharField(verbose_name='Name', max_length=250)
+    type = models.CharField(verbose_name='Name', max_length=250)
