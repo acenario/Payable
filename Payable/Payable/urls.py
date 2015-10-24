@@ -18,4 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^home/$', 'PayableCore.views.home'),
+    url(r'^landing/$', 'PayableCore.views.dashboard'),
+    url(r'^register/$', 'PayableCore.views.register'),
 ]
